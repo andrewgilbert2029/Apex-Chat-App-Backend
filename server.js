@@ -30,4 +30,4 @@ app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/messages", messageRoutes);
 
-server.listen(PORT, () => console.log(`Server started at http://localhost:${PORT}`));
+server.listen(PORT, () => console.log(`Server started at https://apexchat.onrender.com:${PORT}`));
