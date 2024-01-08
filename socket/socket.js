@@ -1,11 +1,11 @@
 import { Server } from "socket.io";
-import https from "https";
+import http from "http";
 import express from "express";
 import Message from "../models/messageModel.js";
 import Conversation from "../models/conversationModel.js";
 
 const app = express();
-const server = https.createServer(app);
+const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
 		origin: "https://apexchatapp.onrender.com",
